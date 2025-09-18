@@ -1,3 +1,5 @@
-public interface TrainingCampFactory {
+public abstract class TrainingCampFactory {
+
+    abstract  
     
 }

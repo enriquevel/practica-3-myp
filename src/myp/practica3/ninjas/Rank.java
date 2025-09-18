@@ -1,8 +1,7 @@
-public enum  Rank {
+public enum Rank {
 
     GENIN,
     CHUNIN,
     JONIN
-
 
 }

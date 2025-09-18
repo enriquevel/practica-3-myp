@@ -1,10 +1,11 @@
 package myp.practica3.model;
 
+import java.util.ArrayList;
 import java.util.List;
-import myp.practica3.builder.package;
+import myp.practica3.builder.Package;
 public class Group {
     private VolunteerNinja volunteer;
-    private List<ApplicantNinja> applicants = new ArrayList<>
+    private List<ApplicantNinja> applicants = new ArrayList<>();
     private Package package;
     private TrainingCamp trainingCamp;
 

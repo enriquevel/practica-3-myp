@@ -4,7 +4,7 @@
 - Galindo Ruvalcaba Luis Adrian
 - Pinzon Chan Jose Carlos
 
-## Modelado y Programación 2026-1 - Practica 02
+## Modelado y Programación 2026-1 - Practica 03
 
 ### Profesora: Rosa Victoria Villa Padilla
 

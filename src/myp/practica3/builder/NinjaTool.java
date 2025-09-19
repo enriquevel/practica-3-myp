@@ -12,34 +12,31 @@ public enum NinjaTool {
 	 * Kunai - Herramienta ninja básica de combate y utilidad.
 	 * Peso: 200.0 gramos
 	 */
-	KUNAI("Kunai", 200.0),
+	KUNAI(200.0),
 
 	/**
 	 * Shuriken - Estrella ninja arrojadiza tradicional.
 	 * Peso: 150.0 gramos
 	 */
-	SHURIKEN("Shuriken", 150.0),
+	SHURIKEN(150.0),
 
 	/**
 	 * Papel bomba - Explosivo ninja activado por chakra.
 	 * Peso: 300.0 gramos
 	 */
-	PAPER_BOMB("Papel Bomba", 300.0),
+	PAPER_BOMB(300.0),
 
 	/**
 	 * Bomba de humo - Herramienta para crear cortinas de humo.
 	 * Peso: 350.0 gramos
 	 */
-	SMOKE_BOMB("Bomba de humo", 350.0),
+	SMOKE_BOMB(350.0),
 
 	/**
 	 * Botiquín médico - Kit de primeros auxilios para misiones.
 	 * Peso: 500.0 gramos
 	 */
-	AID_KIT("Botiquín", 500.0);
-
-	/** El nombre de la herramienta ninja. */
-	private final String name;
+	AID_KIT(500.0);
 
 	/** El peso en gramos de la herramienta ninja. */
 	private final double weight;
@@ -47,21 +44,10 @@ public enum NinjaTool {
 	/**
 	 * Constructor privado para inicializar una herramienta ninja.
 	 *
-	 * @param name   el nombre de la herramienta
 	 * @param weight el peso en gramos de la herramienta
 	 */
-	NinjaTool(String name, double weight) {
-		this.name = name;
+	NinjaTool(double weight) {
 		this.weight = weight;
-	}
-
-	/**
-	 * Devuelve el nombre de la herramienta ninja.
-	 *
-	 * @return el nombre de la herramienta ninja.
-	 */
-	public String getName() {
-		return this.name;
 	}
 
 	/**
@@ -71,5 +57,21 @@ public enum NinjaTool {
 	 */
 	public double getWeight() {
 		return this.weight;
+	}
+
+	/**
+	 * Devuelve una representación en cadena de la herramienta ninja.
+	 *
+	 * @return una representación en cadena de la herramienta ninja.
+	 */
+	@Override
+	public String toString() {
+		return switch (this) {
+			case KUNAI -> "Kunai";
+			case SHURIKEN -> "Shuriken";
+			case PAPER_BOMB -> "Papel Bomba";
+			case SMOKE_BOMB -> "Bomba de humo";
+			case AID_KIT -> "Botiquín";
+		};
 	}
 }

@@ -20,6 +20,11 @@ public enum Clan {
 	/** El clan Akipichi. */
 	AKIPICHI;
 
+	/**
+	 * Devuelve una representación en cadena del clan.
+	 *
+	 * @return una representación en cadena del clan.
+	 */
 	@Override
 	public String toString() {
 		return switch (this) {

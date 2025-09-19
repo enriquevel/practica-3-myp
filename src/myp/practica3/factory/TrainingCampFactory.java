@@ -12,7 +12,7 @@ public abstract class TrainingCampFactory {
      * Crea un campo de entrenamiento con respecto a la suma de los niveles de
      * habilidad de cada uno de los integrantes del grupo.
      * 
-     * @param totalSkillLevel la suma total de los niveles de habilidad de los
+     * @param skillLevelSum la suma total de los niveles de habilidad de los
      *                        integrantes del grupo.
      * @return un campo de entrenamiento con respecto a la suma de los niveles de
      *         habilidad de los ninjas

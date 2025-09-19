@@ -10,6 +10,7 @@ public class MontanaEspiritual extends TrainingCamp {
      * Crea un campo de entrenamiento de tipo Montaña Espiritual.
      */
     public MontanaEspiritual() {
-        super("Montaña Espiritual");
+        super("Montaña Espiritual", "Una cima sagrada envuelta en neblina," +
+				"donde los entrenamientos exigen gran resistencia física y concentración mental.");
     }
 }

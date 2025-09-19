@@ -2,21 +2,15 @@ package myp.practica3.builder;
 
 public class PackageDirector {
 
-	DefaultPackageBuilder builder;
-
-	public PackageDirector() {
-		this.builder = new DefaultPackageBuilder();
-	}
-
 	public Package getBasicPackage() {
-		return this.builder.addKunai(1)
+		return new DefaultPackageBuilder().addKunai(1)
 				.addShuriken(1)
 				.addAidKit(1)
 				.build();
 	}
 
 	public Package getAdvancedPackage() {
-		return this.builder.addShuriken(2)
+		return new DefaultPackageBuilder().addShuriken(2)
 				.addPaperBomb(3)
 				.addSmokeBomb(2)
 				.addAidKit(2)
@@ -24,7 +18,7 @@ public class PackageDirector {
 	}
 
 	public Package getTacticalPackage() {
-		return this.builder.addKunai(3)
+		return new DefaultPackageBuilder().addKunai(3)
 				.addShuriken(2)
 				.addPaperBomb(4)
 				.addSmokeBomb(2)

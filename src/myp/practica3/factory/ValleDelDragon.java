@@ -10,6 +10,7 @@ public class ValleDelDragon extends TrainingCamp {
      * Crea un campo de entrenamiento de tipo Valle del Dragón.
      */
     public ValleDelDragon() {
-        super("Valle del Dragón");
+        super("Valle del Dragón", "Un valle tranquilo rodeado de montañas" +
+				"bajas, ideal para principiantes que requieren un entorno seguro para entrenar.");
     }
 }

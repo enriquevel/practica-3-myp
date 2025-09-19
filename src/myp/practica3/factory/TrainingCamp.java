@@ -9,13 +9,17 @@ public abstract class TrainingCamp {
     /** El nombre del campo de entrenamiento. */
     protected String name;
 
+	/** La descripción del campo de entrenamiento. */
+	protected String description;
+
     /**
      * Construye un campo de entrenamiento con el nombre dado.
      * 
      * @param name el nombre del campo de entrenamiento.
      */
-    protected TrainingCamp(String name) {
+    protected TrainingCamp(String name, String description) {
         this.name = name;
+		this.description = description;
     }
     
     /**
@@ -27,6 +31,15 @@ public abstract class TrainingCamp {
         return this.name;
     }
 
+	/**
+	 * Devuelve la descripción del campo de entrenamiento.
+	 *
+	 * @return la descripción del campo de entrenamiento.
+	 */
+	public String getDescription() {
+		return this.description;
+	}
+
     /**
      * Representacion en cadena del campo de entrenamiento.
      * 
@@ -34,6 +47,6 @@ public abstract class TrainingCamp {
      */
     @Override
     public String toString() {
-        return this.name;
+        return this.name + ": " + this.description;
     }
 }

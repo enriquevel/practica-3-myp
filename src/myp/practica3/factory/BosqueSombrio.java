@@ -11,6 +11,7 @@ public class BosqueSombrio extends TrainingCamp {
      * Crea un campo de entrenamiento de tipo Bosque Sombrío.
      */
     public BosqueSombrio() {
-        super("Bosque Sombrío");
+        super("Bosque Sombrío", "Un bosque denso y misterioso, lleno de" +
+				"obstáculos naturales que ponen a prueba la agilidad y el trabajo en equipo.");
     }
 }

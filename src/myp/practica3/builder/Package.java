@@ -44,7 +44,14 @@ public class Package {
 	 * @return el peso total del paquete en gramos
 	 */
 	public double getTotalWeight() {
+		double totalWeight = 0;
 
+		for(Map.Entry<NinjaTool, Integer> entry: this.tools.entrySet()) {
+			NinjaTool tool = entry.getKey();
+			int amount = entry.getValue();
+			totalWeight += tool.getWeight() * amount;
+		}
+		return totalWeight;
 	}
 
 	/**
